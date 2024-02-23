@@ -3,7 +3,7 @@ guid: d6886ea43db354f41b1c2ecbcc00b45e
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -63,6 +63,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -114,14 +115,14 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: iPhone
-    maxTextureSize: 2048
+    maxTextureSize: 512
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 50
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
-    overridden: 0
+    overridden: 1
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -255,11 +256,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      119784-OQ3C7T-424-01_2: -1034416750
-      119784-OQ3C7T-424-01_1: -1389890074
-      119784-OQ3C7T-424-01_4: -692465308
-      119784-OQ3C7T-424-01_3: 1317247119
       119784-OQ3C7T-424-01_0: 60891868
+      119784-OQ3C7T-424-01_1: -1389890074
+      119784-OQ3C7T-424-01_2: -1034416750
+      119784-OQ3C7T-424-01_3: 1317247119
+      119784-OQ3C7T-424-01_4: -692465308
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

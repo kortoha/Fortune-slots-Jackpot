@@ -3,7 +3,7 @@ guid: 8d29bf0073d94ce4682a2f2a1d36b367
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -63,6 +63,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -114,14 +115,14 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: iPhone
-    maxTextureSize: 2048
+    maxTextureSize: 1024
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 50
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
-    overridden: 0
+    overridden: 1
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -528,25 +529,25 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      CoinFX_18: -1251727656
-      CoinFX_4: -190857401
-      CoinFX_15: -1869784849
-      CoinFX_14: -1237154343
-      CoinFX_5: -76822372
-      CoinFX_7: 2735152
-      CoinFX_9: -1636366498
-      CoinFX_11: -1313502382
-      CoinFX_16: 994711186
       CoinFX_0: -392711085
-      CoinFX_10: -746922069
-      CoinFX_6: -791044800
       CoinFX_1: -1334027875
-      CoinFX_2: -230560418
+      CoinFX_10: -746922069
+      CoinFX_11: -1313502382
       CoinFX_12: 1306267019
-      CoinFX_8: -272924156
       CoinFX_13: 1734157749
-      CoinFX_3: 469019991
+      CoinFX_14: -1237154343
+      CoinFX_15: -1869784849
+      CoinFX_16: 994711186
       CoinFX_17: -1678195721
+      CoinFX_18: -1251727656
+      CoinFX_2: -230560418
+      CoinFX_3: 469019991
+      CoinFX_4: -190857401
+      CoinFX_5: -76822372
+      CoinFX_6: -791044800
+      CoinFX_7: 2735152
+      CoinFX_8: -272924156
+      CoinFX_9: -1636366498
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

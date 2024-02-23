@@ -93,6 +93,50 @@ public class Slots : MonoBehaviour
                 _startTouchPos = Vector2.zero;
             }
         }
+        
+#if UNITY_EDITOR
+        // Mouse Input
+        // Check for the initial mouse button down event
+        if (Input.GetMouseButtonDown(0))
+        {
+            _startTouchPos = Input.mousePosition; // Capture the start position
+        }
+
+        // Check if the mouse button is being held down
+        if (Input.GetMouseButton(0))
+        {
+            float deltaY = Input.mousePosition.y - _startTouchPos.y; // Calculate vertical movement
+
+            // Determine if the vertical movement exceeds the threshold to start or stop spinning
+            if (!isSpin && deltaY > _swipeThreshold)
+            {
+                // Start spinning
+                isSpin = true;
+                Debug.Log("Start Spin");
+                // Add your spin start logic here
+            }
+            else if (isSpin && deltaY < -_swipeThreshold)
+            {
+                // Stop spinning
+                isSpin = false;
+                Debug.Log("Stop Spin");
+                // Add your spin stop logic here
+            }
+        }
+
+        // Check for the mouse button release event
+        if (Input.GetMouseButtonUp(0))
+        {
+            // Optionally, reset the start position and/or stop spinning
+            _startTouchPos = Vector2.zero;
+            if (isSpin)
+            {
+                isSpin = false;
+                Debug.Log("Stop Spin");
+                // Add any additional logic for stopping the spin here
+            }
+        }
+#endif
     }
 
     private void SlotMonitoring()
@@ -104,6 +148,7 @@ public class Slots : MonoBehaviour
                 _slotSound.Play();
                 _isSlotSoundPlay = true;
             }
+
             _isFXOnce = false;
             if (Player.Instance.GetEnergy() > 0)
             {
@@ -111,6 +156,7 @@ public class Slots : MonoBehaviour
                 SpinSecondSlot();
                 SpinThirdSlot();
             }
+
             if (_firstSlot.transform.position.y <= _bottomPoint.position.y)
             {
                 _firstSlotUsed = true;
@@ -182,6 +228,7 @@ public class Slots : MonoBehaviour
             _slotSound.Stop();
             _isSlotSoundPlay = false;
         }
+
         _firstSlot.transform.position = new Vector2(_firstSlot.transform.position.x, _startPoint.position.y);
         _secondSlot.transform.position = new Vector2(_secondSlot.transform.position.x, _startPoint.position.y);
         _thirdSlot.transform.position = new Vector2(_thirdSlot.transform.position.x, _startPoint.position.y);
@@ -233,7 +280,6 @@ public class Slots : MonoBehaviour
                 Invoke("UseThirdSlotAbility", 1f);
             }
         }
-
     }
 
     private void UseFirstSlotAbility()

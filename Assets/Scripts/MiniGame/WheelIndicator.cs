@@ -1,51 +1,54 @@
 using UnityEngine;
 
-public class WheelIndicator : MonoBehaviour
+namespace MiniGame
 {
-    [SerializeField] private MiniGame _miniGame;
-    [SerializeField] private GameObject _game;
-
-    [SerializeField] private WinItem _winItem;
-
-    private bool _isWinOnce = false;
-
-    private void Update()
+    public class WheelIndicator : MonoBehaviour
     {
-        if(_miniGame.isWheelSpin)
-        {
-            _isWinOnce = false;
-        }
-    }
+        [SerializeField] private MiniGame _miniGame;
+        [SerializeField] private GameObject _game;
 
-    private void OnTriggerStay2D(Collider2D collision)
-    {
-        if (!_miniGame.isWheelSpin && !_miniGame.IsFirsSpin() && !_isWinOnce)
-        {
-            WheelSlot slot = collision.GetComponent<WheelSlot>();
-            slot.WinEnergy();
-            _isWinOnce = true;
+        [SerializeField] private WinItem _winItem;
 
-            if(slot.GetWinEnergyCount() > 0)
+        private bool _isWinOnce = false;
+
+        private void Update()
+        {
+            if(_miniGame.isWheelSpin)
             {
-                WinItem winItem = Instantiate(_winItem, Vector2.zero, Quaternion.identity);
-                winItem.winItemCount = slot.GetWinEnergyCount();
-                Invoke("CloseMiniGame", 2f);
-            }
-            else
-            {
-                SoundController.Instance.PlayNoItemSound();
+                _isWinOnce = false;
             }
         }
-    }
 
-    private void OnDisable()
-    {
-        Player.Instance.MiniGameState(false);
-    }
+        private void OnTriggerStay2D(Collider2D collision)
+        {
+            if (!_miniGame.isWheelSpin && !_miniGame.IsFirsSpin() && !_isWinOnce)
+            {
+                WheelSlot slot = collision.GetComponent<WheelSlot>();
+                slot.WinEnergy();
+                _isWinOnce = true;
 
-    private void CloseMiniGame()
-    {
-        _game.SetActive(true);
-        _miniGame.gameObject.SetActive(false);
+                if(slot.GetWinEnergyCount() > 0)
+                {
+                    WinItem winItem = Instantiate(_winItem, Vector2.zero, Quaternion.identity);
+                    winItem.winItemCount = slot.GetWinEnergyCount();
+                    Invoke("CloseMiniGame", 2f);
+                }
+                else
+                {
+                    SoundController.Instance.PlayNoItemSound();
+                }
+            }
+        }
+
+        private void OnDisable()
+        {
+            Player.Instance.MiniGameState(false);
+        }
+
+        private void CloseMiniGame()
+        {
+            _game.SetActive(true);
+            _miniGame.gameObject.SetActive(false);
+        }
     }
 }

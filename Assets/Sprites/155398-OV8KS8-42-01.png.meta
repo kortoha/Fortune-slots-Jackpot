@@ -3,7 +3,7 @@ guid: d4ad77b2d8494764587516dfd76572fc
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -63,6 +63,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -114,14 +115,14 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: iPhone
-    maxTextureSize: 2048
+    maxTextureSize: 1024
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 50
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
-    overridden: 0
+    overridden: 1
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -257,8 +258,8 @@ TextureImporter:
     nameFileIdTable:
       155398-OV8KS8-42-01_0: 2034663088
       155398-OV8KS8-42-01_1: 1655419359
-      155398-OV8KS8-42-01_3: 510242763
       155398-OV8KS8-42-01_2: -1404755757
+      155398-OV8KS8-42-01_3: 510242763
       155398-OV8KS8-42-01_4: -392333854
   spritePackingTag: 
   pSDRemoveMatte: 0

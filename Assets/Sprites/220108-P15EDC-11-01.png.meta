@@ -3,7 +3,7 @@ guid: 17d384c208ca70b4ca1c95c0a4b2ca6f
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -63,6 +63,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -114,14 +115,14 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: iPhone
-    maxTextureSize: 2048
+    maxTextureSize: 512
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 50
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
-    overridden: 0
+    overridden: 1
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -297,12 +298,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      220108-P15EDC-11-01_0: 1595718217
       220108-P15EDC-11-01_1: -322364326
-      220108-P15EDC-11-01_4: -255013191
-      220108-P15EDC-11-01_5: -473842904
       220108-P15EDC-11-01_2: 69194257
       220108-P15EDC-11-01_3: 2139618504
-      220108-P15EDC-11-01_0: 1595718217
+      220108-P15EDC-11-01_4: -255013191
+      220108-P15EDC-11-01_5: -473842904
       220108-P15EDC-11-01_6: -1138149252
   spritePackingTag: 
   pSDRemoveMatte: 0

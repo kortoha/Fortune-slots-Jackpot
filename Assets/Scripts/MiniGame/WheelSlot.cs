@@ -1,16 +1,19 @@
 using UnityEngine;
 
-public class WheelSlot : MonoBehaviour
+namespace MiniGame
 {
-    [SerializeField] private int _winEnergy;
-
-    public void WinEnergy()
+    public class WheelSlot : MonoBehaviour
     {
-        Player.Instance.WinEnergy(_winEnergy);
-    }
+        [SerializeField] private int _winEnergy;
 
-    public int GetWinEnergyCount()
-    {
-        return _winEnergy;
+        public void WinEnergy()
+        {
+            Player.Instance.WinEnergy(_winEnergy);
+        }
+
+        public int GetWinEnergyCount()
+        {
+            return _winEnergy;
+        }
     }
 }

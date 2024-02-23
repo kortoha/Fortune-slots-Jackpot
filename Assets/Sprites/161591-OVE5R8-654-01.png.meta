@@ -3,7 +3,7 @@ guid: 98ad69f1fb7bb5c42a62d9478b76b456
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -63,6 +63,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -114,14 +115,14 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: iPhone
-    maxTextureSize: 2048
+    maxTextureSize: 1024
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 50
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
-    overridden: 0
+    overridden: 1
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -339,15 +340,15 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      161591-OVE5R8-654-01_1: 240495982
-      161591-OVE5R8-654-01_8: 2033472668
-      161591-OVE5R8-654-01_5: -1599429164
-      161591-OVE5R8-654-01_2: -724709446
-      161591-OVE5R8-654-01_4: -469261448
-      161591-OVE5R8-654-01_6: -1268766435
       161591-OVE5R8-654-01_0: -564950561
-      161591-OVE5R8-654-01_7: -1841448360
+      161591-OVE5R8-654-01_1: 240495982
+      161591-OVE5R8-654-01_2: -724709446
       161591-OVE5R8-654-01_3: 1876187129
+      161591-OVE5R8-654-01_4: -469261448
+      161591-OVE5R8-654-01_5: -1599429164
+      161591-OVE5R8-654-01_6: -1268766435
+      161591-OVE5R8-654-01_7: -1841448360
+      161591-OVE5R8-654-01_8: 2033472668
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
